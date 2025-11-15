@@ -1,0 +1,6 @@
+ascii_tree_output: true
+output_image: dependency_graph.png
+package_name: example-package
+package_version: 1.0.0
+repository_url: https://github.com/example/repo.git
+test_repo_mode: remote
