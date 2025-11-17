@@ -118,7 +118,7 @@ def create_sample_config() -> None:
         'ascii_tree_output': True
     }
 
-    with open('../../AppData/Roaming/JetBrains/PyCharmCE2024.2/scratches/config.yaml', 'w', encoding='utf-8') as file:
+    with open('config.yaml', 'w', encoding='utf-8') as file:
         yaml.dump(sample_config, file, default_flow_style=False, allow_unicode=True)
 
     print("Создан пример конфигурационного файла 'config.yaml'")
@@ -126,7 +126,7 @@ def create_sample_config() -> None:
 
 def main():
     """Точка входа в приложение"""
-    if not os.path.exists('../../AppData/Roaming/JetBrains/PyCharmCE2024.2/scratches/config.yaml'):
+    if not os.path.exists('config.yaml'):
         print("Конфигурационный файл не найден. Создаю пример...")
         create_sample_config()
         print("Отредактируйте config.yaml и запустите приложение снова")
